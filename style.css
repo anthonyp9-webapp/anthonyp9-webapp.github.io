@@ -1,0 +1,216 @@
+
+
+
+/* entire page margin */
+*{margin: 4px;}
+h3 { text-align: center;}
+/*  headers*/
+h1,h2,h3,h4,h5,h6 {
+    padding: 8px;
+}
+/*Header adjustments*/
+h1 
+{ font-size: 4.0em;
+font-weight: bold;
+font-style: italic;
+color: rgb(255, 255, 255);
+text-align: center;}
+h2 { font-size: 1.5em;}
+h3 {font-size: 1.125em;}
+footer p {font-size: .75em;}
+
+/* padding to paragraphs*/ 
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+/* background color*/
+body {
+    font-size: 200%;
+    width:90%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(12, 129, 104, 0.507);
+}
+/* list*/
+li {
+    font-size:larger;
+    padding-left: 10px;
+}
+/*index border*/
+#index  {
+    background-image: url("clean1.jpg"); 
+    width: 400px; 
+    height: 500px;
+    border-radius: 10px;
+    border: 5px solid rgb(0, 0, 0);
+    position: static; 
+ } 
+
+ header { 
+    width: 96.875%; 
+    padding: 15px 1.5625%; 
+    border-bottom: 2px solid black; }
+
+section img { 
+        display:flex;
+        float: block; 
+        margin-right: 1.5em;
+        width: 100%;
+        margin-bottom: .5em; }
+
+
+figcaption { 
+        display: block; 
+        text-align: right;
+        font-weight: bold; 
+        padding-top: .25em; 
+        margin-bottom: 1em; }
+        
+/*left column*/
+main {  
+    width: 45%;
+    padding: 15px 1.5625%;
+    float: left;}
+footer { 
+    clear: both; 
+    width: 96.875%;
+    padding: 15px 1.5625%;
+    border-top: 2px solid #000000; 
+}
+   
+    /*right column*/
+
+aside {
+    width: 45%;
+    padding: 15px 1.5625%;
+    float: right;
+}
+
+
+
+/*nav menu details*/
+#nav_menu ul { 
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+    margin: 0; 
+    padding: 0; } 
+
+    #nav_menu ul li a { 
+    text-align: center; 
+    display: block; 
+    width: 70px;
+    padding:1em; 
+    text-decoration: none; 
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    font-weight: bold; } 
+    
+/*positioning*/
+    #nav_menu ul { 
+        list-style-type:none; 
+        position: relative; } 
+        #nav_menu ul li { float: left; } 
+        #nav_menu ul ul { 
+        position: absolute; 
+        top: 100%; } 
+
+    
+     #nav_quote ul li a { 
+        text-align: center; 
+        display: inline-block; 
+        width: 100px;
+        padding: 100px;
+        text-decoration: none; 
+        background-color: rgb(245, 245, 245); 
+        color: rgb(0, 0, 0); 
+        font-weight: bold;  }
+    #nav_quote ul { 
+        list-style-type:none; 
+        position: relative; } 
+        #nav_menu ul li { float: center; } 
+        #nav_menu ul ul { 
+        position: center; 
+        top: 100%; } 
+     #nav_quote ul { 
+            display: flex;
+            flex-basis: 100%;
+            justify-content: space-around;
+            margin: 100px; 
+            padding: 0; } 
+
+#mobile_menu {
+    display: none; }
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+
+#nav_menu ul {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+}
+
+
+figure{
+    width: 900;
+    padding: 5px;
+}
+/* Services Table */
+table { 
+    width: 1000px;
+    height: 300px;
+    margin: 30px auto;
+    border: 5px solid black; 
+    border-collapse: collapse; } 
+    th, td { 
+    
+    border: 2px solid black; 
+    padding: .2em .7em; 
+    text-align: center; } 
+    th.left, td.left { text-align: center; } 
+    tfoot { font-weight: bold; }
+    /* Services media*/
+    @media only screen and (max-width: 767px) { 
+        th, td {  display: block; 
+        } 
+    }
+
+    body { 
+        font: 90% Arial, Helvetica, sans-serif; 
+        } 
+        label { 
+        color: rgb(0, 0, 0); 
+        float: left; 
+        width: 8em; 
+        font-weight: bold; 
+        text-align: right;} 
+        input { 
+        width: 15em; 
+        margin-left: 1em; 
+        margin-bottom: .5em;} 
+        input:focus { 
+        border: 2px solid navy; } 
+        #button, #reset { 
+        width: 7em; 
+        box-shadow: 2px 2px O navy; 
+        background-color: silver; } 
+        #button { margin-left: 5.5em; 
+         ;}
+
+
+        /* button positioning*/
+        fieldset { 
+        margin-top: 1em; 
+        margin-bottom: 1em; 
+        padding-top: .5em;
+        }
+        /* text area modification*/
+        textarea { 
+            height: 5em; 
+            width: 25em; 
+            font-family: Arial, Helvetica, sans-serif; } 

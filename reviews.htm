@@ -1,0 +1,57 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <title>Reviews</title>
+        <meta name="keywords" content="parrino,cleaning, clean">
+        <meta name="viewport" content="width=device-width, initial-scale=l">
+        <link rel="shortcut icon" href="./clean.jpg">
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+        <!--slick nav menu-->
+        <link rel="stylesheet" href="./slicknav.css"> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="./jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+         $(document) .ready(function(){ 
+        $ ('#nav_menu') .slicknav( {prependTo: "#mobile_menu"}); } ) ; 
+        </script> 
+</head>
+<body>
+    <header>
+         <!--Page Navigation-->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu"> 
+        <ul>
+                <li><a href="index.htm">Home</a></li>  
+                <li><a href="reviews.htm">Reviews</a></li> 
+                <li><a href="about.htm">About</a> </li>
+                <li><a href="services.htm">Services</a></li> 
+                <li><a href="contact.htm">Contact</a></li>
+        </ul>
+        <h1>Reviews</h1>
+</header>
+        
+        Type a Review: <br> 
+        <textarea id= "comments" 
+            placeholder= "Additional comments or questions, please enter them here. " > 
+        </textarea>
+        <input type="submit" id="button" value="Post"> 
+        <input type="reset" id="reset">
+
+
+<footer>
+        <nav id="nav_quote">
+            <ul>
+        <li><a href="contact.htm">GET A QUOTE NOW!</a></li> 
+        </ul>
+        </nav>
+        
+    </footer>
+                
+</body>
+
+</html>

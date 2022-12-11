@@ -1,0 +1,93 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>contact us</title>
+    <meta name="keywords" content="parrino, cleaning,clean">
+    <meta name="viewport" content="width=device-width, initial-scale=l">
+    <link rel="shortcut icon" href="./clean.jpg">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <!--slick nav menu-->
+    <link rel="stylesheet" href="./slicknav.css"> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./jquery.slicknav.min.js"></script> 
+    <script type="text/javascript"> 
+     $(document) .ready(function(){ 
+    $ ('#nav_menu') .slicknav( {prependTo: "#mobile_menu"}); } ) ; 
+    </script> 
+</head>
+<body>
+    <header>
+         <!--Page Navigation-->
+         <nav id="mobile_menu"></nav>
+            <nav id="nav_menu"> 
+                <ul> 
+                    <li><a href="index.htm">Home</a></li>  
+                    <li><a href="reviews.htm">Reviews</a></li> 
+                    <li><a href="about.htm">About</a> </li>
+                    <li><a href="services.htm">Services</a></li> 
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+                <h1>Contact Us</h1>
+    </header>
+<!--fields and character yields-->
+<form action="response.htm" method="get" id="contact info">
+    <label for="fullname">Full Name:</label> 
+<input type="text" id="fullname" autofocus required minlength="15" maxlength="25"><br> 
+<label for="address">Address:</label> 
+<input type="text" id="address" required minlength="15" maxlength="50"><br> 
+<label for= "city" >City:</label> 
+<input type="text" id="city" required minlength="4" maxlength="25"><br> 
+<label for="state">State:</label> 
+<input type="text" id="state"><br>
+<label for="zip">Zip code:</label> 
+<input type="text" id="zip"required minlength="5" maxlength="10" autocomplete="off"  pattern="\d{5}(-\d{4})?$"><br> 
+<label for="phonenumber">Phone Number:</label> 
+<input type="tel" id="phonenumber" required minlength="10"maxlength="12" placeholder="999-999-9999" title="Must be 999-999-9999 format"><br> 
+<label for="emailaddress">Email Address:</label> 
+<input type="email" id="emailaddress" required minlength="10" maxlength="25"><br> 
+<label for="submissiondate">Day of Cleaning:</label> 
+<input type="date" id="submission" required><br> 
+
+
+    
+    </optgroup></select></label>
+<!--form bulletins-->
+<form id="order">
+    <fieldset>
+      Inquiry Type:<br> 
+        <input type="radio" name="clean" value="Business">Business<br> 
+        <input type="radio" name="clean" value="Residential">Residential<br> 
+        <input type="radio" name="clean" value="Clean Out">Clean Out<br>
+     </fieldset>
+    
+<fieldset>
+Type of Service: Choose all that apply<br> 
+    <input type="checkbox" name="Bedrooms1" value="Bedrooms1">1 Bedroom    <input type="checkbox" name="Bedrooms2" value="Bedrooms2">2 Bedroom <input type="checkbox" name="Bedrooms3" value="Bedrooms2">3+ Bedroom<br> 
+    <input type="checkbox" name="Bathroom" value="Bathroom">Bathroom <input type="checkbox" name="Bathroom2" value="Bathroom2">2+ Bathroom<br> 
+    <input type="checkbox" name="Living Room" value="Living Room">Living Room<br> 
+    <input type="checkbox" name="Kitchen" value="Kitchen">Kitchen<br>
+    <input type="checkbox" name="Base" value="Baseboard">Baseboards Cleaned<br> <input type="checkbox" name="Organize" value="Organize">Organize<br> 
+    <input type="checkbox" name="Steam Clean" value="Steam Clean">Steam Clean all Carpets
+
+</fieldset>
+
+
+ <br> 
+<!-- Comment box-->
+Additional questions or comments.<br> 
+<textarea id= "comments" 
+    placeholder= "Additional comments or questions, please enter them here. " > 
+</textarea>
+
+
+
+<!--Form Buttons -->
+<input type="submit" id="button" value="Send"> 
+<input type="reset" id="reset">
+
+</body>
+</html>
